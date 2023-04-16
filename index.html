@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Movie Website</title>
+</head>
+
+<body>
+      <div class="maindiv">
+            <div class="selectOption" >
+                  <select id="genres" onchange="getComboG(this)">
+                        <option value="">All</option>
+                        <option value="Action">Action</option>
+                        <option value="Family">Family</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                  </select>
+
+                  <select id="release_date" onchange="getComboD">
+                        <option value="">All</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                  </select>
+
+                  <select id="genres" onchange="getComboL(this)">
+                        <option value="">All</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                  </select>
+            </div>
+                        <select class="rating"  onchange="getComboR(this)">
+                              <option value="">All</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                        </select>
+                        <hr>
+                  </div>
+                  <div class="mainDataLit">
+                        <div class="header">
+                              <p class="rank">RANK</p>
+                              <p class="movie">MOVIE</p>
+                              <p class="year">YEAR</p>
+                        </div>
+                        <div id="movie-list"></div>
+                  </div>
+            </div>
+
+
+            <script src="app.js"></script>
+
+</body>
+
+</html>
